@@ -8,7 +8,7 @@
 
 效果演示如下：
 
-<img src="RevealAni.gif" style="width:200px;height:400px">
+<img src="RevealAni.gif" style="max-width:200px;">
 
 **如果这个gif演示太卡，可以单击gif在新页面打开**
 
