@@ -8,7 +8,9 @@
 
 效果演示如下：
 
-<img src="RevealAni.gif" style="width:400px;height:800px">
+<img src="RevealAni.gif" style="width:200px;height:400px">
+
+**如果这个gif演示太卡，可以单击gif在新页面打开**
 
 其实如果细心拆分，按部就班实现，其实不难。
 
