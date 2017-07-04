@@ -1,25 +1,138 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="RevelView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="qotsa" translatesAutoresizingMaskIntoConstraints="NO" id="CUp-IU-OIP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="473"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5wR-ss-ZgC">
+                                <rect key="frame" x="468" y="444" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.21033030450000001" green="0.84200353660000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="TFz-zy-kRM"/>
+                                    <constraint firstAttribute="height" constant="75" id="fQR-tm-aYE"/>
+                                </constraints>
+                                <color key="tintColor" red="0.21033030450000001" green="0.84200353660000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="ic_play_white">
+                                    <attributedString key="attributedTitle"/>
+                                </state>
+                                <connections>
+                                    <action selector="clikePlayBtn:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="84K-Tn-bbW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="...Like Clockwork" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyo-ph-VEG">
+                                <rect key="frame" x="14" y="497" width="223" height="52"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Queens of the Stone Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWB-nh-OgH">
+                                <rect key="frame" x="37" y="549" width="223" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gc-y2-hvG">
+                                <rect key="frame" x="268" y="513" width="48" height="50"/>
+                                <color key="backgroundColor" red="0.21033030450000001" green="0.84200353660000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="ic_stop"/>
+                                <connections>
+                                    <action selector="clickStop:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="u7E-tp-SHb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shQ-4T-s1j">
+                                <rect key="frame" x="268" y="518" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.21033030450000001" green="0.84200353660000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="ic_skip_next"/>
+                                <connections>
+                                    <action selector="clickNextBtn:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="Cnl-F7-J21"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KAc-xd-zqW">
+                                <rect key="frame" x="276" y="506" width="48" height="48"/>
+                                <color key="backgroundColor" red="0.21033030450000001" green="0.84200353660000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="ic_skip_previous"/>
+                                <connections>
+                                    <action selector="clickPreviousBtn:" destination="8bC-Xf-vdC" eventType="touchUpInside" id="e5z-JT-yqa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dear Jane - 不许你注定一人" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndA-Vl-1jI">
+                                <rect key="frame" x="233" y="564" width="135" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" alpha="0.0" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gpO-0k-rw9">
+                                <rect key="frame" x="158" y="513" width="284" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="nyx-3W-2ky"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="gpO-0k-rw9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1gw-gC-Z3O"/>
+                            <constraint firstItem="CUp-IU-OIP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4DY-3w-76Q"/>
+                            <constraint firstItem="WWB-nh-OgH" firstAttribute="top" secondItem="oyo-ph-VEG" secondAttribute="bottom" constant="20" id="5zB-4G-OkQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5wR-ss-ZgC" secondAttribute="bottom" constant="112.5" id="HDj-pl-4Nr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5gc-y2-hvG" secondAttribute="bottom" constant="40" id="Mxa-DT-fd4"/>
+                            <constraint firstItem="shQ-4T-s1j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nrr-s4-SXB"/>
+                            <constraint firstItem="5gc-y2-hvG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OWB-Hp-BUn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gpO-0k-rw9" secondAttribute="bottom" constant="40" id="SBu-vC-KWw"/>
+                            <constraint firstItem="WWB-nh-OgH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="WTi-gR-qa9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CUp-IU-OIP" secondAttribute="bottom" constant="150" id="gsJ-Uw-DF1"/>
+                            <constraint firstItem="oyo-ph-VEG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="hZL-Fp-2JF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KAc-xd-zqW" secondAttribute="bottom" constant="40" id="ha1-bu-VTi"/>
+                            <constraint firstAttribute="trailing" secondItem="5wR-ss-ZgC" secondAttribute="trailing" constant="10" id="kkX-Fh-vh4"/>
+                            <constraint firstAttribute="trailing" secondItem="CUp-IU-OIP" secondAttribute="trailing" id="mKT-hs-0Bl"/>
+                            <constraint firstItem="oyo-ph-VEG" firstAttribute="top" secondItem="CUp-IU-OIP" secondAttribute="bottom" constant="60" id="oLR-2u-wyU"/>
+                            <constraint firstItem="gpO-0k-rw9" firstAttribute="top" secondItem="ndA-Vl-1jI" secondAttribute="top" id="oUS-JE-BzH"/>
+                            <constraint firstItem="CUp-IU-OIP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="vIW-O1-qCq"/>
+                            <constraint firstItem="KAc-xd-zqW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vf8-c8-UnW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="shQ-4T-s1j" secondAttribute="bottom" constant="40" id="w9H-sg-a6Q"/>
+                            <constraint firstItem="ndA-Vl-1jI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wCO-eK-VyS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ndA-Vl-1jI" secondAttribute="bottom" constant="40" id="xki-5F-r3G"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="backgroundPic" destination="CUp-IU-OIP" id="fVW-Bt-NJ6"/>
+                            <outlet property="clockworkLabel" destination="oyo-ph-VEG" id="X9o-wF-UFF"/>
+                            <outlet property="nextBtn" destination="shQ-4T-s1j" id="eju-JO-sb0"/>
+                            <outlet property="playBtn" destination="5wR-ss-ZgC" id="tlt-fs-5gQ"/>
+                            <outlet property="previousBtn" destination="KAc-xd-zqW" id="4l1-My-cG5"/>
+                            <outlet property="slider" destination="gpO-0k-rw9" id="v73-H4-7bd"/>
+                            <outlet property="songNameLabel" destination="ndA-Vl-1jI" id="4Xm-KN-BST"/>
+                            <outlet property="stoneAgeLabel" destination="WWB-nh-OgH" id="rpL-EN-25z"/>
+                            <outlet property="stopBtn" destination="5gc-y2-hvG" id="Q7Q-BK-0M5"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="243" y="339"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_play_white" width="48" height="48"/>
+        <image name="ic_skip_next" width="48" height="48"/>
+        <image name="ic_skip_previous" width="48" height="48"/>
+        <image name="ic_stop" width="48" height="48"/>
+        <image name="qotsa" width="750" height="750"/>
+    </resources>
 </document>

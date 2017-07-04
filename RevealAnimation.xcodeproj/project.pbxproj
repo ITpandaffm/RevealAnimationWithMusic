@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1810301D84716700986853 /* Dear Jane - 不许你注定一人.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8B18102F1D84716700986853 /* Dear Jane - 不许你注定一人.mp3 */; };
 		8B92F9541D7E679800AA3F2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92F9531D7E679800AA3F2C /* main.m */; };
 		8B92F9571D7E679800AA3F2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92F9561D7E679800AA3F2C /* AppDelegate.m */; };
 		8B92F95A1D7E679800AA3F2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92F9591D7E679800AA3F2C /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		8B92F9621D7E679800AA3F2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B92F9601D7E679800AA3F2C /* LaunchScreen.storyboard */; };
 		8B92F96D1D7E679800AA3F2C /* RevealAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92F96C1D7E679800AA3F2C /* RevealAnimationTests.m */; };
 		8B92F9781D7E679800AA3F2C /* RevealAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92F9771D7E679800AA3F2C /* RevealAnimationUITests.m */; };
+		8B92F9871D7E750B00AA3F2C /* RevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B92F9861D7E750B00AA3F2C /* RevelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B18102F1D84716700986853 /* Dear Jane - 不许你注定一人.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dear Jane - 不许你注定一人.mp3"; sourceTree = "<group>"; };
 		8B92F94F1D7E679800AA3F2C /* RevealAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevealAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B92F9531D7E679800AA3F2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B92F9551D7E679800AA3F2C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 		8B92F9731D7E679800AA3F2C /* RevealAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevealAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B92F9771D7E679800AA3F2C /* RevealAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RevealAnimationUITests.m; sourceTree = "<group>"; };
 		8B92F9791D7E679800AA3F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B92F9851D7E750B00AA3F2C /* RevelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevelView.h; sourceTree = "<group>"; };
+		8B92F9861D7E750B00AA3F2C /* RevelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +110,10 @@
 				8B92F9561D7E679800AA3F2C /* AppDelegate.m */,
 				8B92F9581D7E679800AA3F2C /* ViewController.h */,
 				8B92F9591D7E679800AA3F2C /* ViewController.m */,
+				8B92F9851D7E750B00AA3F2C /* RevelView.h */,
+				8B92F9861D7E750B00AA3F2C /* RevelView.m */,
 				8B92F95B1D7E679800AA3F2C /* Main.storyboard */,
+				8B18102F1D84716700986853 /* Dear Jane - 不许你注定一人.mp3 */,
 				8B92F95E1D7E679800AA3F2C /* Assets.xcassets */,
 				8B92F9601D7E679800AA3F2C /* LaunchScreen.storyboard */,
 				8B92F9631D7E679800AA3F2C /* Info.plist */,
@@ -207,6 +215,7 @@
 				TargetAttributes = {
 					8B92F94E1D7E679800AA3F2C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = X4435MZ82Y;
 					};
 					8B92F9671D7E679800AA3F2C = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -244,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B92F9621D7E679800AA3F2C /* LaunchScreen.storyboard in Resources */,
+				8B1810301D84716700986853 /* Dear Jane - 不许你注定一人.mp3 in Resources */,
 				8B92F95F1D7E679800AA3F2C /* Assets.xcassets in Resources */,
 				8B92F95D1D7E679800AA3F2C /* Main.storyboard in Resources */,
 			);
@@ -273,6 +283,7 @@
 				8B92F95A1D7E679800AA3F2C /* ViewController.m in Sources */,
 				8B92F9571D7E679800AA3F2C /* AppDelegate.m in Sources */,
 				8B92F9541D7E679800AA3F2C /* main.m in Sources */,
+				8B92F9871D7E750B00AA3F2C /* RevelView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +426,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X4435MZ82Y;
 				INFOPLIST_FILE = RevealAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "IT-Panda.RevealAnimation";
+				PRODUCT_BUNDLE_IDENTIFIER = "IT-Panda.RevealAnimation.ffm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +441,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = X4435MZ82Y;
 				INFOPLIST_FILE = RevealAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "IT-Panda.RevealAnimation";
+				PRODUCT_BUNDLE_IDENTIFIER = "IT-Panda.RevealAnimation.ffm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +517,7 @@
 				8B92F97E1D7E679800AA3F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B92F97F1D7E679800AA3F2C /* Build configuration list for PBXNativeTarget "RevealAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +526,7 @@
 				8B92F9811D7E679800AA3F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B92F9821D7E679800AA3F2C /* Build configuration list for PBXNativeTarget "RevealAnimationUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +535,7 @@
 				8B92F9841D7E679800AA3F2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
